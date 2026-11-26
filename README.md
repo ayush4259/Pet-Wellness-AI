@@ -4,6 +4,20 @@ Taking care of a pet is a big responsibility, and sometimes it is hard to know w
 
 The idea behind this project is to make everyday pet care feel a little easier for pet owners.
 
+## Website preview
+
+Here are a few screenshots from the website:
+
+![Pet Wellness AI website preview 1](Pet.Wellness.AI/Shots/Screenshot%202024-11-16%20041223.png)
+
+![Pet Wellness AI website preview 2](Pet.Wellness.AI/Shots/Screenshot%202024-11-16%20042131.png)
+
+![Pet Wellness AI website preview 3](Pet.Wellness.AI/Shots/Screenshot%202024-11-16%20042352.png)
+
+![Pet Wellness AI website preview 4](Pet.Wellness.AI/Shots/Screenshot%202024-11-16%20042443.png)
+
+[Browse all 18 website screenshots](Pet.Wellness.AI/Shots/)
+
 ## What you can explore
 
 - **Home page** – An introduction to the website and its main sections.
@@ -36,7 +50,7 @@ You can also open the project folder in Visual Studio Code and use the **Live Se
 
 ## Project structure
 
-The website pages and their supporting files are kept in the `Web Development` folder. It contains the HTML pages, CSS stylesheets and image assets used by the website.
+The website pages and their supporting files are kept in the `Web Development` folder. It contains the HTML pages, CSS stylesheets and image assets used by the website. The `Shots` folder contains screenshots of the website.
 
 ## A note about this project
 
