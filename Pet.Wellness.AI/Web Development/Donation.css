@@ -1,0 +1,324 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    position: relative;
+    background: url('animal-kingdom-background.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    color: white;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .donate-button {
+    background-color: #9c27b0;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .donate-button:hover {
+    background-color: #7b1fa2;
+  }
+  
+  /* Donation Info Section */
+  .donation-info {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  .donation-info h2 {
+    font-size: 2.5rem;
+    color: #9c27b0;
+  }
+  
+  .donation-info p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+  }
+  
+  .donation-progress {
+    margin-top: 30px;
+  }
+  
+  .progress-bar {
+    width: 80%;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 10px;
+    margin: 10px auto;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #9c27b0;
+    border-radius: 10px;
+  }
+  
+  /* Donation Options Section */
+  .donation-options {
+    background-color: #fff;
+    padding: 60px 20px;
+  }
+  
+  .donation-options h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #9c27b0;
+  }
+  
+  .options-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+  .option-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .option-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+  }a/* General Body Styling */
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    position: relative;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url('animal-kingdom-background.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero-overlay {
+    padding: 30px;
+    color: white;
+  }
+  
+  .hero-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  }
+  
+  .hero-subtitle {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+  
+  .donate-button {
+    background-color: #9c27b0;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .donate-button:hover {
+    background-color: #7b1fa2;
+    transform: scale(1.1);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Donation Info Section */
+  .donation-info {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  .donation-info h2 {
+    font-size: 2.8rem;
+    color: #9c27b0;
+    margin-bottom: 20px;
+  }
+  
+  .donation-info p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: #555;
+  }
+  
+  .donation-progress {
+    margin-top: 30px;
+  }
+  
+  .progress-bar {
+    width: 80%;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 15px;
+    margin: 20px auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #9c27b0;
+    border-radius: 15px;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  /* Donation Options Section */
+  .donation-options {
+    background-color: #fff;
+    padding: 60px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .donation-options h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #9c27b0;
+    margin-bottom: 40px;
+  }
+  
+  .options-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .option-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .option-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .option-card img {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 20px;
+  }
+  
+  .option-card h3 {
+    font-size: 1.6rem;
+    color: #9c27b0;
+    margin-bottom: 10px;
+  }
+  
+  .option-card p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  .option-card button {
+    background-color: #9c27b0;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .option-card button:hover {
+    background-color: #7b1fa2;
+    transform: scale(1.05);
+  }
+  
+  /* Footer Section */
+  footer {
+    background-color: #9c27b0;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  footer p {
+    font-size: 1rem;
+    color: #fff;
+  }
+  
+  
+  .option-card h3 {
+    font-size: 1.5rem;
+    color: #9c27b0;
+    margin-bottom: 10px;
+  }
+  
+  .option-card p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Footer Section */
+  footer {
+    background-color: #9c27b0;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 1rem;
+  }
+  

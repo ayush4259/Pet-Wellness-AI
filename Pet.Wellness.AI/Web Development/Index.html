@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetWellness AI</title>
+  <link href="index.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      transition: background-color 0.3s ease;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: #e8ebfb;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease;
+    }
+
+    header .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #000;
+      transition: color 0.3s ease;
+    }
+
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #000;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #5C00C7;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .cta-buttons a {
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .cta-buttons a:first-child {
+      background-color: transparent;
+      color: #000;
+    }
+
+    .cta-buttons a:last-child {
+      background-color: #5C00C7;
+      color: #f1eaea;
+    }
+
+    .cta-buttons a:hover {
+      background-color: #340e80; /* Darker purple on hover */
+      transform: scale(1.05);
+    }
+
+    .hero-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px;
+      background-color: #f9f9f9;
+      transition: padding 0.3s ease;
+    }
+
+    .hero-content {
+      max-width: 50%;
+    }
+
+    .hero-content h1 {
+      font-size: 48px;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      transition: color 0.3s ease;
+    }
+
+    .hero-content p {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 30px;
+      transition: color 0.3s ease;
+    }
+
+    .hero-content a {
+      display: inline-block;
+      background-color: #340c84;
+      color: #fff;
+      padding: 15px 30px;
+      border-radius: 5px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .hero-content a:hover {
+      background-color: #33149b;
+      transform: scale(1.05);
+    }
+
+    .hero-image img {
+      max-width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .hero-image img:hover {
+      transform: scale(1.05);
+    }
+
+    .stats-section {
+      background-color: #f9f9f9;
+      padding: 50px 0;
+      transition: padding 0.3s ease;
+    }
+
+    .stats-container {
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+    }
+
+    .stat h2 {
+      font-size: 40px;
+      color: #5C00C7;
+      margin: 10px 0;
+    }
+
+    .stat p {
+      font-size: 18px;
+      color: #555;
+    }
+
+    .features-section {
+      background-color: #fff;
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    .features-section h2 {
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+
+    .features-container {
+      display: flex;
+      justify-content: space-around;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .feature {
+      width: 220px;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      text-align: center;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .feature:hover {
+      background-color: #e7e7e7;
+      transform: scale(1.05);
+    }
+
+    .feature-icon {
+      font-size: 40px;
+      color: #6a1ac5;
+    }
+
+    .feature h3 {
+      font-size: 24px;
+      margin: 20px 0;
+    }
+
+    .feature p {
+      font-size: 16px;
+      color: #555;
+    }
+
+    .testimonials-section {
+      background-color: #f9f9f9;
+      padding: 50px 0;
+    }
+
+    .testimonials-section .section-title {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .testimonials-grid {
+      background-color: #fff;
+      display: flex;
+      justify-content: space-around;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .testimonial-card {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      width: 250px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+    .testimonial-card:hover {
+      box-shadow: 0 6px 12px rgba(116, 18, 18, 0.2);
+      transform: scale(1.05);
+    }
+
+    .testimonial-card .profile-pic {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+    .testimonial-card .role {
+      font-size: 14px;
+      color: #777;
+      margin-bottom: 15px;
+    }
+
+    .testimonial-card .testimonial-text {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .linkedin-icon {
+      font-size: 18px;
+      color: #0A66C2;
+      text-decoration: none;
+    }
+
+    footer {
+      background-color: #6a1b9a;
+      color: rgb(249, 244, 244);
+      text-align: center;
+      padding: 40px 20px;
+      border-top: 5px solid #86cddd;
+      position: relative;
+      transition: background-color 0.3s ease;
+    }
+
+    footer p {
+      font-size: 14px;
+      margin-top: 20px;
+      color: #ece3ee;
+    }
+
+    footer .subscribe {
+      margin: 20px 0;
+    }
+
+    footer .subscribe input {
+      padding: 12px;
+      width: 250px;
+      border-radius: 30px;
+      border: none;
+      outline: none;
+      margin-right: 10px;
+      font-size: 16px;
+      color: #6a1b9a;
+      background-color: #f4f0f0;
+      transition: background-color 0.3s ease;
+    }
+z
+    footer .subscribe input:focus {
+      background-color: #e09cec;
+      color: white;
+    }
+
+    footer .subscribe button {
+      padding: 12px 30px;
+      background-color: #bb4acf;
+      color: white;
+      font-size: 16px;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    footer .subscribe button:hover {
+      background-color: #1e6d3c;
+    }
+
+    footer .social-icons a {
+      margin: 0 10px;
+      font-size: 24px;
+      color: white;
+      transition: color 0.3s ease;
+    }
+
+    footer .social-icons a:hover {
+      color: #a89d3f;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <header>
+      <span style="font-size: 50px; vertical-align: middle;">🧬</span>
+      <div><h2>PetHealth Campaign</h2></div>
+    </header>
+    
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="About Us.html">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="Contact Us.html">Contact</a></li>
+        <a href="Donation.html" style="color: black; text-decoration: none;">Donation</a>
+
+      </ul>
+    </nav>
+    <div class="cta-buttons">
+      <a href="Log In page.html">Log In</a>
+      <a href="Sign up.html">Sign Up</a>
+    </div>
+  </header>
+  <section class="hero-section" id="home">
+    <div class="hero-content">
+      <h1>AI-Powered Pet Wellness</h1>
+      <p>Your pet's health, enhanced with AI and personalized care insight.</p>
+
+      
+      <a href="#sign-up">Get Started</a>
+      <div><h5>Trustpilot ⭐⭐⭐⭐⭐ 10k+ daily users</h5> </div>
+      
+    </div>
+    <div class="hero-image">
+      <img src="Main Logo.jpg" alt="Logo" width="500" height="500">
+
+    </div>
+  </section>
+  
+  <section class="stats-section" style="background-color: #cdd6fa;">
+    <div class="stats-container">
+      <div class="stat">
+        <h1>🌟</h1>
+        <h2>200+</h2>
+        <p>Happy Pets</p>
+      </div>
+      <div class="stat">
+        <h1>🌟</h1>
+        <h2>150+</h2>
+        <p>Expert Vets</p>
+      </div>
+      <div class="stat">
+        <h1>🌟</h1>
+        <h2>100%</h2>
+        <p>Personalized Care</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="features-section" id="services">
+    <h2>Our Features</h2>
+    <div class="features-container">
+      <div class="feature">
+        <div class="feature-icon"><i class="fas fa-stethoscope"></i></div>
+        <h2>👾</h2>
+        <a href="Expert Care.html"><h3>Expert Care</h3></a>
+        <p>Suggesting the best Suitable-Diet for your Pet Wellness.</p>
+      </div>
+
+
+      <div class="feature">
+        <div class="feature-icon"><i class="fas fa-stethoscope"></i></div>
+        <h2>𓌉◯𓇋</h2>
+
+        <a href="Nutrional Diet Plan.html"><h3>Nutritional Diet-Plan</h3></a>
+        <p>Access to top-rated veterinarians anytime.</p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon"><i class="fas fa-brain"></i></div>
+        <h2>🐈‍⬛</h2>
+        
+        <a href=""><h3>AI Insights</h3></a>
+        <p>Smart analysis for better pet health.</p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon"><i class="fas fa-heart"></i></div>
+        <h2>🐾</h2>
+        
+        <a href="Wellness Tracking.html"><h3>Wellness Tracking</h3></a>
+        <p>Track your pet’s health with ease.</p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="testimonials-section" id="testimonials">
+    <div class="section-title">Real Stories from Pet Owners</div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <img src="LinkdinTestimonial 3.jpg" alt="Profile Picture" class="profile-pic">
+        <div class="role">Pet Parent</div>
+        <div class="testimonial-text">"PetWellness AI has completely transformed the way I care for my pet!"</div>
+        <a href="#" class="linkedin-icon"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <div class="testimonial-card">
+        <img src="LinkdinTestimonial 4.jpg" alt="Profile Picture" class="profile-pic">
+        <div class="role">Owner</div>
+        <div class="testimonial-text">"I appreciate the useful diagnostics and nutritional recommendations for my dog from PetWellness AI!"</div>
+        <a href="#" class="linkedin-icon"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </section>
+
+
+ <section class="topics-section">
+  <div class="container">
+    
+    <h2 class="section-title">Explore Diverse Pet Care Topics</h2>
+    <p class="section-subtitle">Dive into a variety of pet care insights and solutions tailored for you.</p>
+    <div class="topics-grid">
+      <div class="topic-card">
+        <img src="Pet Health Monitoring.jpg" alt="Pet Health Monitoring">
+        <div class="topic-info">
+          <p class="category">Growth · Feb 15 2023</p>
+          <h><a href="https://medium.com/@jam.canda/revolutionizing-pet-care-with-ai-smart-health-monitoring-systems-4e04eebb2b1b" target="_blank" class="topics-link"><h3>How AI Transforms Pet Health Monitoring</h3></a>
+          
+        </div>
+      </div>
+      <div class="topic-card">
+        <img src="Pet nutritional need.jpg" alt="Nutritional Needs">
+        <div class="topic-info">
+          <p class="category">Growth · Feb 17 2024</p>
+          <a href="https://in.virbac.com/home/every-advice/pagecontent/every-advice/pet-nutrition-choosing-best-food-for-your-furry-friend.html#:~:text=Understanding%20Pet%20Nutrition,must%2C%20while%20carbohydrates%20negligibly%20needed." target="_blank" class="topics-link"><h3>Understanding Your Pet's Nutritional Needs</h3></a>
+        </div>
+      </div>
+      <div class="topic-card">
+        <img src="Excersie Plan for pet.jpg" alt="Exercise Plans">
+        <div class="topic-info">
+          <p class="category">Growth · Feb 10 2024</p>
+          <a href="https://pridebites.com/blogs/barking-post-blog/how-to-create-a-fitness-plan-that-works-for-you-and-your-dog?srsltid=AfmBOopXvS3YC8dl_aiFT0RawV8Lgnc2Td-I3dY8xLrJ8jORlFMuu_54" target="_blank" class="topics-link"><h3>Creating Tailored Exercise Plans for Pets</h3></a>
+        </div>
+      </div>
+      <div class="topic-card">
+        <img src="Pet care Trend.jpg" alt="Pet Care Trends">
+        <div class="topic-info">
+          <p class="category">Growth · Feb 1 2024</p>
+          <a href="https://explodingtopics.com/blog/pet-industry-trends" target="_blank" class="topics-link"><h3>Exploring New Pet Care Trends</h3> </a>
+        </div>
+      </div>
+      <div class="topic-card">
+        <img src="Pet-Wellness.jpg" alt="Pet Wellness">
+        <div class="topic-info">
+          <p class="category">Growth · Feb 15 2024</p>
+          <a href="https://healthypawlife.com/en-in?gad_source=1&gclid=CjwKCAiA9IC6BhA3EiwAsbltOJCofl-rV6Acelu8uWdBCX2CcUMvhC0y9c_9NA7S1zk87nvJuGigfRoCEjoQAvD_BwE" target="_blank" class="topics-link"><h3>Holistic Wellness Solutions for Pets</h3></a>
+        </div>
+      </div>
+      <div class="topic-card">
+        <img src="Engagment with Pets.jpg" alt="Play & Engagement">
+        <div class="topic-info">
+          <p class="category">Growth · Feb 15 2023</p>
+         <a href="https://www.gingrapp.com/blog/the-role-of-play-in-learning-and-socialization-for-pets#:~:text=Structured%20play%20helps%20ensure%20all,physical%20exercise%20and%20learning%20control." target="_blank" class="topics-link"><h3>Enhancing Play and Engagement with Pets</h3></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .topics-section {
+    background-color: #10366e; /* Dark blue background */
+    padding: 50px 0;
+    color: #fff;
+    text-align: center;
+  }
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .section-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #5038d8;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+
+  .section-subtitle {
+    font-size: 18px;
+    color: #c0c6ce; /* Light blue-grey for subtitle */
+    margin-bottom: 40px;
+  }
+
+  .topics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+
+  .topic-card {
+    background-color: #00284d; /* Slightly lighter blue for the cards */
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+
+  .topic-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(189, 171, 171, 0.3);
+  }
+
+  .topic-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+  }
+
+  .topic-card:hover img {
+    opacity: 0.8;
+  }
+
+  .topic-info {
+    padding: 20px;
+  }
+
+  .category {
+    font-size: 14px;
+    color: #77aaff; /* Light blue text for category */
+    margin-bottom: 10px;
+  }
+
+  .topic-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #f9f2f2;
+    line-height: 1.3;
+    margin-bottom: 15px;
+  }
+
+  .topic-card p {
+    font-size: 16px;
+    color: #a8a4a4; /* Light grey text for descriptions */
+  }
+
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 30px;
+    }
+
+    .section-subtitle {
+      font-size: 16px;
+    }
+
+    .topics-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .section-title {
+      font-size: 26px;
+    }
+
+    .topics-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+
+</body>
+
+</html>
+
+<footer>
+  <!-- Footer Content Wrapper -->
+  <div class="footer-content">
+    
+    <!-- Logo Section -->
+    <div class="logo-section">
+      <h2>ⓕ 🇮🇳 𝕏 🖂 🌐</h2>
+    </div>
+    
+    <!-- Subscription Section -->
+    <div class="subscribe">
+      <h1>
+      <input type="email" placeholder="Enter your email" class="email-input" />
+      <button class="subscribe-btn">Subscribe</button>
+    </div>
+  </div></h1>
+  
+  <!-- Copyright Info -->
+  <div class="copyright-info">
+    <h4>&copy; 2024 PetHealth Campaign. All Rights Reserved.</h4>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* About Us Section */
+  .about-us-section {
+    background-color: #ffffff;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .about-us-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .section-title {
+    font-size: 36px;
+    color: #0A3D7D; /* Dark Blue */
+    margin-bottom: 20px;
+  }
+  
+  .section-subtitle {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  /* Doctors Cards */
+  .doctors-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .doctor-card {
+    width: 280px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .doctor-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .doctor-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  .doctor-name {
+    font-size: 22px;
+    color: #0A3D7D; /* Dark Blue */
+    margin-bottom: 10px;
+  }
+  
+  .doctor-specialty {
+    font-size: 16px;
+    color: #007BFF; /* Lighter Blue */
+    margin-bottom: 10px;
+  }
+  
+  .doctor-description {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .doctors-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .doctor-card {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  }
+  
