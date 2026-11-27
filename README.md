@@ -8,11 +8,7 @@ The idea behind this project is to make everyday pet care feel a little easier f
 
 Here are a few screenshots from the website:
 
-![Pet Wellness AI website preview 1](Pet.Wellness.AI/Shots/Screenshot%202024-11-16%20041223.png)
-
-![Pet Wellness AI website preview 2](Pet.Wellness.AI/Shots/Screenshot%202024-11-16%20042131.png)
-
-[Browse all 18 website screenshots](Pet.Wellness.AI/Shots/)
+![Pet Wellness AI website preview v1.0](Pet.Wellness.AI/Shots/Screenshot%202024-11-16%20041223.png)
 
 ## What you can explore
 
@@ -24,6 +20,10 @@ Here are a few screenshots from the website:
 - **About and Contact pages** – More information about the project and ways to get in touch.
 - **Login and Sign-up pages** – Front-end pages included as part of the website design.
 - **Donation page** – A page dedicated to the donation section.
+- 
+![Pet Wellness AI website preview v1.0](Pet.Wellness.AI/Shots/Screenshot%202024-11-16%20042131.png)
+
+[Browse all 18 web-Shots](Pet.Wellness.AI/Shots/)
 
 ## Built with
 
