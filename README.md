@@ -12,10 +12,6 @@ Here are a few screenshots from the website:
 
 ![Pet Wellness AI website preview 2](Pet.Wellness.AI/Shots/Screenshot%202024-11-16%20042131.png)
 
-![Pet Wellness AI website preview 3](Pet.Wellness.AI/Shots/Screenshot%202024-11-16%20042352.png)
-
-![Pet Wellness AI website preview 4](Pet.Wellness.AI/Shots/Screenshot%202024-11-16%20042443.png)
-
 [Browse all 18 website screenshots](Pet.Wellness.AI/Shots/)
 
 ## What you can explore
