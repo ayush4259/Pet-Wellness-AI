@@ -1,61 +1,70 @@
 # Pet Wellness AI 🐾
 
-Taking care of a pet is a big responsibility, and sometimes it is hard to know where to start. I created **Pet Wellness AI** as a simple website that brings useful pet-care information and wellness resources together in one place.
-
-The idea behind this project is to make everyday pet care feel a little easier for pet owners.
+A multi-page pet-care website concept that brings helpful information about nutrition, exercise, wellness tracking and expert care into one place.
 
 ## Website preview
 
-Here are a few screenshots from the website:
+**Current repository preview — v1.0**
 
-![Pet Wellness AI website preview v1.0](Pet.Wellness.AI/Shots/Screenshot%202024-11-16%20041223.png)
+The screenshots below show the currently published interface. When the website receives a major redesign, the README preview will be updated to the latest version while older screenshots remain available for reference.
 
-## What you can explore
+<p align="center">
+  <img src="Pet.Wellness.AI/Shots/Screenshot%202024-11-16%20041223.png" alt="Pet Wellness AI homepage preview" width="90%">
+</p>
 
-- **Home page** – An introduction to the website and its main sections.
-- **Expert Care** – A section focused on guidance and helpful pet-care information.
-- **Nutritional Diet Plan** – A page with pet nutrition and diet-related content.
-- **Wellness Tracking** – A section for exploring pet wellness tracking.
-- **Pet-care topics** – Articles and resources about nutrition, exercise, health monitoring and play.
-- **About and Contact pages** – More information about the project and ways to get in touch.
-- **Login and Sign-up pages** – Front-end pages included as part of the website design.
-- **Donation page** – A page dedicated to the donation section.
-- 
-![Pet Wellness AI website preview v1.0](Pet.Wellness.AI/Shots/Screenshot%202024-11-16%20042131.png)
+<p align="center">
+  <img src="Pet.Wellness.AI/Shots/Screenshot%202024-11-16%20042131.png" alt="Pet Wellness AI website section preview" width="90%">
+</p>
 
-[Browse all 18 web-Shots](Pet.Wellness.AI/Shots/)
+[Browse all website screenshots](Pet.Wellness.AI/Shots/)
 
-## Built with
+## Features and pages
 
-This version of the project uses:
+- **Home page** — Introduction and navigation to the main sections.
+- **Expert Care** — Pet-care guidance and information.
+- **Nutritional Diet Plan** — Nutrition and diet-related content.
+- **Wellness Tracking** — Pet wellness tracking interface.
+- **Pet-care resources** — Topics covering nutrition, exercise, health monitoring and play.
+- **About and Contact** — Project information and contact interface.
+- **Login and Sign-up** — Front-end account interface pages.
+- **Donation** — Donation page interface.
+
+## Technology
 
 - HTML
 - CSS
-- Images and other visual assets used across the pages
+- JavaScript
+- Images and other web assets
 
-## Run it on your computer
+## Run locally
 
-You can try the website locally in a few steps:
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/ayush4259/Pet.Wellness.AI.git
+   ```
+2. Open the `Pet.Wellness.AI/Web Development` folder.
+3. Open `Index.html` in a browser, or use the VS Code Live Server extension.
 
-1. Click the **Code** button on this repository and choose **Download ZIP**.
-2. Extract the downloaded ZIP file.
-3. Open the `Pet.Wellness.AI/Web Development` folder.
-4. Open `Index.html` in your browser.
+## Repository structure
 
-You can also open the project folder in Visual Studio Code and use the **Live Server** extension if you have it installed.
+```text
+Pet.Wellness.AI/
+├── README.md
+└── Pet.Wellness.AI/
+    ├── Web Development/
+    │   └── HTML, CSS, JavaScript and image assets
+    └── Shots/
+        └── Website screenshots
+```
 
-## Project structure
+## Project scope
 
-The website pages and their supporting files are kept in the `Web Development` folder. It contains the HTML pages, CSS stylesheets and image assets used by the website. The `Shots` folder contains screenshots of the website.
+Pet Wellness AI is a learning project and front-end website prototype. Login, sign-up and donation pages are interface demonstrations; this repository does not establish production authentication, payment processing or a verified AI integration.
 
-## A note about this project
+The content is for general informational purposes and is not a substitute for advice from a qualified veterinarian.
 
-Pet Wellness AI is a learning project and a front-end website prototype. The login, sign-up, donation and AI-related sections are part of the website interface; this repository does not currently include a verified backend or working AI integration. Please treat the content as general information, not as a replacement for advice from a qualified veterinarian.
+## About
 
-## Why I built it
+Created by **Ayush Srivastava**.
 
-I wanted to bring different parts of pet care—nutrition, exercise, wellness and expert-care information—into one easy-to-explore website. Building it also gave me an opportunity to practise creating multiple web pages and styling them with HTML and CSS.
-
----
-
-**Created by Ayush Srivastava**
+[GitHub profile](https://github.com/ayush4259)
